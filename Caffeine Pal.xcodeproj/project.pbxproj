@@ -21,6 +21,10 @@
 		33B40E892B61AA9F004DC075 /* PurchaseOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B40E882B61AA9F004DC075 /* PurchaseOperations.swift */; };
 		33B40E8B2B62E4D6004DC075 /* ViewReceipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B40E8A2B62E4D6004DC075 /* ViewReceipeView.swift */; };
 		33B40E8D2B62EE87004DC075 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B40E8C2B62EE87004DC075 /* PaywallView.swift */; };
+		DE29C12F2C6DF70600CD2EE7 /* GetCaffeineIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29C12D2C6DEF3700CD2EE7 /* GetCaffeineIntent.swift */; };
+		DE29C1312C6DFA1900CD2EE7 /* AppShortcutsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29C1302C6DFA1500CD2EE7 /* AppShortcutsProvider.swift */; };
+		DE29C1332C6DFE2200CD2EE7 /* LogEspressoIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29C1322C6DFE1F00CD2EE7 /* LogEspressoIntent.swift */; };
+		DE29C1352C6E868300CD2EE7 /* CustomDialogIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29C1342C6E867400CD2EE7 /* CustomDialogIntent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		33B40E882B61AA9F004DC075 /* PurchaseOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseOperations.swift; sourceTree = "<group>"; };
 		33B40E8A2B62E4D6004DC075 /* ViewReceipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewReceipeView.swift; sourceTree = "<group>"; };
 		33B40E8C2B62EE87004DC075 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		DE29C12D2C6DEF3700CD2EE7 /* GetCaffeineIntent.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = GetCaffeineIntent.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; wrapsLines = 1; };
+		DE29C1302C6DFA1500CD2EE7 /* AppShortcutsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShortcutsProvider.swift; sourceTree = "<group>"; };
+		DE29C1322C6DFE1F00CD2EE7 /* LogEspressoIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEspressoIntent.swift; sourceTree = "<group>"; };
+		DE29C1342C6E867400CD2EE7 /* CustomDialogIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialogIntent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,7 @@
 				33440CA02B604A4200D0FF9C /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		33440CA02B604A4200D0FF9C /* Products */ = {
 			isa = PBXGroup;
@@ -77,6 +86,7 @@
 				33440CBD2B6056BA00D0FF9C /* StoreKit 2 Code */,
 				33440CBC2B6056B500D0FF9C /* Store and Model */,
 				33440CB32B6054F100D0FF9C /* Views */,
+				DE29C12A2C6DEEB500CD2EE7 /* App Intents */,
 				33440CA22B604A4200D0FF9C /* Caffeine_PalApp.swift */,
 				33440CA42B604A4200D0FF9C /* ContentView.swift */,
 				33440CA62B604A4600D0FF9C /* Assets.xcassets */,
@@ -131,6 +141,17 @@
 			path = "StoreKit 2 Code";
 			sourceTree = "<group>";
 		};
+		DE29C12A2C6DEEB500CD2EE7 /* App Intents */ = {
+			isa = PBXGroup;
+			children = (
+				DE29C12D2C6DEF3700CD2EE7 /* GetCaffeineIntent.swift */,
+				DE29C1322C6DFE1F00CD2EE7 /* LogEspressoIntent.swift */,
+				DE29C1342C6E867400CD2EE7 /* CustomDialogIntent.swift */,
+				DE29C1302C6DFA1500CD2EE7 /* AppShortcutsProvider.swift */,
+			);
+			path = "App Intents";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,7 +178,7 @@
 		33440C972B604A4200D0FF9C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
@@ -203,10 +224,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				33440CB52B60550100D0FF9C /* TabIconView.swift in Sources */,
+				DE29C12F2C6DF70600CD2EE7 /* GetCaffeineIntent.swift in Sources */,
 				33440CBB2B6055F500D0FF9C /* AppSettingsView.swift in Sources */,
 				33440CA52B604A4200D0FF9C /* ContentView.swift in Sources */,
+				DE29C1352C6E868300CD2EE7 /* CustomDialogIntent.swift in Sources */,
+				DE29C1332C6DFE2200CD2EE7 /* LogEspressoIntent.swift in Sources */,
 				33440CBF2B60577B00D0FF9C /* CaffeineStore.swift in Sources */,
 				33440CB92B6055ED00D0FF9C /* RecipesView.swift in Sources */,
+				DE29C1312C6DFA1900CD2EE7 /* AppShortcutsProvider.swift in Sources */,
 				33B40E8D2B62EE87004DC075 /* PaywallView.swift in Sources */,
 				33440CB72B6055E700D0FF9C /* IntakeView.swift in Sources */,
 				33440CC12B6069E500D0FF9C /* EspressoDrink.swift in Sources */,
@@ -347,10 +372,11 @@
 				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "SecondaryIcon TertiaryIcon";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Caffeine Pal/Preview Content\"";
-				DEVELOPMENT_TEAM = M5X536S592;
+				DEVELOPMENT_TEAM = F964A8L528;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Caffeine Pal";
@@ -359,13 +385,15 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.superwall.caffeinePal.Caffeine-Pal";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.superwall.caffeinePal.Caffeine-Pal.navin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -379,10 +407,11 @@
 				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "TertiaryIcon SecondaryIcon";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Caffeine Pal/Preview Content\"";
-				DEVELOPMENT_TEAM = M5X536S592;
+				DEVELOPMENT_TEAM = F964A8L528;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Caffeine Pal";
@@ -391,13 +420,15 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.superwall.caffeinePal.Caffeine-Pal";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.superwall.caffeinePal.Caffeine-Pal.navin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
