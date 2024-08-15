@@ -6,28 +6,34 @@
 //
 
 import SwiftUI
+import AppIntents
 
 struct IntakeView: View {
     @Environment(PurchaseOperations.self) private var storefront: PurchaseOperations
     @Environment(CaffeineStore.self) private var store: CaffeineStore
     
     var body: some View {
-        NavigationStack {
-            ScrollView {
-                CaffeineGaugeView()
-                    .padding(.bottom, 32)
-                    .padding(.top)
-                if store.amountOver > 0 {
-                    AmountOverBannerView()
-                        .padding()
-                        .transition(.scale(scale: 0.8, anchor: .center))
-                }
-                QuickLogView()
-                    .padding()
-            }
-            .animation(.spring, value: store.amountOver)
-            .navigationTitle("Today's Caffeine")
+      NavigationStack {
+        ScrollView {
+          // Show Siri tip
+          SiriTipView(intent: GetCaffeineIntent(), isVisible: .constant(true))
+            .padding()
+          CaffeineGaugeView()
+            .padding(.bottom, 32)
+            .padding(.top)
+          if store.amountOver > 0 {
+            AmountOverBannerView()
+              .padding()
+              .transition(.scale(scale: 0.8, anchor: .center))
+          }
+          QuickLogView()
+            .padding()
+          Spacer()
+          ShortcutsLink()
         }
+        .animation(.spring, value: store.amountOver)
+        .navigationTitle("Today's Caffeine")
+      }
     }
 }
 
