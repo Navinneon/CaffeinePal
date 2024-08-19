@@ -72,6 +72,8 @@ struct EspressoTimelineProvide: Widget {
       EspressoTimelineProvideEntryView(entry: entry)
         .containerBackground(.fill.tertiary, for: .widget)
     }
+    .configurationDisplayName("My Widget")
+    .description("This is an example widget.")
   }
 }
 
