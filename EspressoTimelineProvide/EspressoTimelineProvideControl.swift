@@ -39,12 +39,12 @@ extension EspressoTimelineProvideControl {
 
     struct Provider: AppIntentControlValueProvider {
         func previewValue(configuration: TimerConfiguration) -> Value {
-            EspressoTimelineProvideControl.Value(isRunning: false, name: configuration.timerName)
+          EspressoTimelineProvideControl.Value(isRunning: false, name: configuration.timerName!)
         }
 
         func currentValue(configuration: TimerConfiguration) async throws -> Value {
             let isRunning = true // Check if the timer is running
-            return EspressoTimelineProvideControl.Value(isRunning: isRunning, name: configuration.timerName)
+          return EspressoTimelineProvideControl.Value(isRunning: isRunning, name: configuration.timerName!)
         }
     }
 }
@@ -53,7 +53,7 @@ struct TimerConfiguration: ControlConfigurationIntent {
     static var title: LocalizedStringResource { "Timer Name Configuration" }
 
     @Parameter(title: "Timer Name")
-    var timerName: String
+    var timerName: String?
 }
 
 struct StartTimerIntent: SetValueIntent {
