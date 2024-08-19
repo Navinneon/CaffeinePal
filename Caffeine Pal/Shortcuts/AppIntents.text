@@ -1,0 +1,26 @@
+//
+//  Untitled.swift
+//  Caffeine Pal
+//
+//  Created by Navin Kumar R on 19/08/24.
+//
+
+/**
+App Intents
+
+# Available from iOS 17
+1. App Intents
+ - Ordinary
+ - SIngle Parameter using enum  (App Enum)
+ - Complex structure for Dynamic Model (App Entity -  and App Queries - search, filter .. etc)
+ - Custom View
+
+2.Siri
+3.Spotlight
+
+#  Only available for iOS 18 …. Yet to configure
+4.Interactive Widgets
+5.Control Center
+
+**/
+
