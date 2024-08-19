@@ -9,11 +9,9 @@ import Foundation
 import AppIntents
 import WidgetKit
 
-import Foundation
-import AppIntents
-import WidgetKit
+// AppEnum Entity
 
-struct LogEspressoIntent: AppIntent {
+struct LogEspressoIntent: AppIntent, WidgetConfigurationIntent {
   static var title = LocalizedStringResource("Log Espresso Shot")
   static var description = IntentDescription("Logs some espresso shots.")
   

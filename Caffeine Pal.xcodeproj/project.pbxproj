@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,11 +21,41 @@
 		33B40E892B61AA9F004DC075 /* PurchaseOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B40E882B61AA9F004DC075 /* PurchaseOperations.swift */; };
 		33B40E8B2B62E4D6004DC075 /* ViewReceipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B40E8A2B62E4D6004DC075 /* ViewReceipeView.swift */; };
 		33B40E8D2B62EE87004DC075 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B40E8C2B62EE87004DC075 /* PaywallView.swift */; };
-		DE29C12F2C6DF70600CD2EE7 /* GetCaffeineIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29C12D2C6DEF3700CD2EE7 /* GetCaffeineIntent.swift */; };
-		DE29C1312C6DFA1900CD2EE7 /* AppShortcutsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29C1302C6DFA1500CD2EE7 /* AppShortcutsProvider.swift */; };
-		DE29C1332C6DFE2200CD2EE7 /* LogEspressoIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29C1322C6DFE1F00CD2EE7 /* LogEspressoIntent.swift */; };
-		DE29C1352C6E868300CD2EE7 /* CustomDialogIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29C1342C6E867400CD2EE7 /* CustomDialogIntent.swift */; };
+		DE06AB952C72761A00228D9F /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE06AB942C72761A00228D9F /* WidgetKit.framework */; };
+		DE06AB972C72761A00228D9F /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE06AB962C72761A00228D9F /* SwiftUI.framework */; };
+		DE06AB9A2C72761A00228D9F /* EspressoTimelineProvideLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE06AB992C72761A00228D9F /* EspressoTimelineProvideLiveActivity.swift */; };
+		DE06AB9C2C72761A00228D9F /* EspressoTimelineProvideBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE06AB9B2C72761A00228D9F /* EspressoTimelineProvideBundle.swift */; };
+		DE06AB9E2C72761A00228D9F /* EspressoTimelineProvideControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE06AB9D2C72761A00228D9F /* EspressoTimelineProvideControl.swift */; };
+		DE06ABA02C72761A00228D9F /* EspressoTimelineProvide.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE06AB9F2C72761A00228D9F /* EspressoTimelineProvide.swift */; };
+		DE06ABA22C72761A00228D9F /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE06ABA12C72761A00228D9F /* AppIntent.swift */; };
+		DE06ABA42C72761D00228D9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE06ABA32C72761D00228D9F /* Assets.xcassets */; };
+		DE06ABA82C72761D00228D9F /* EspressoTimelineProvideExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DE06AB922C72761A00228D9F /* EspressoTimelineProvideExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DE06ABB02C72769700228D9F /* CaffeineStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33440CBE2B60577B00D0FF9C /* CaffeineStore.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE06ABA62C72761D00228D9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33440C972B604A4200D0FF9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE06AB912C72761A00228D9F;
+			remoteInfo = EspressoTimelineProvideExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DE06ABAC2C72761D00228D9F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DE06ABA82C72761D00228D9F /* EspressoTimelineProvideExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		33344BE62B6849E900FCEF58 /* CaffinePalProducts.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = CaffinePalProducts.storekit; sourceTree = "<group>"; };
@@ -44,17 +74,58 @@
 		33B40E882B61AA9F004DC075 /* PurchaseOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseOperations.swift; sourceTree = "<group>"; };
 		33B40E8A2B62E4D6004DC075 /* ViewReceipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewReceipeView.swift; sourceTree = "<group>"; };
 		33B40E8C2B62EE87004DC075 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
-		DE29C12D2C6DEF3700CD2EE7 /* GetCaffeineIntent.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = GetCaffeineIntent.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; wrapsLines = 1; };
-		DE29C1302C6DFA1500CD2EE7 /* AppShortcutsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShortcutsProvider.swift; sourceTree = "<group>"; };
-		DE29C1322C6DFE1F00CD2EE7 /* LogEspressoIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEspressoIntent.swift; sourceTree = "<group>"; };
-		DE29C1342C6E867400CD2EE7 /* CustomDialogIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialogIntent.swift; sourceTree = "<group>"; };
+		DE06AB922C72761A00228D9F /* EspressoTimelineProvideExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EspressoTimelineProvideExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE06AB942C72761A00228D9F /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		DE06AB962C72761A00228D9F /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		DE06AB992C72761A00228D9F /* EspressoTimelineProvideLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EspressoTimelineProvideLiveActivity.swift; sourceTree = "<group>"; };
+		DE06AB9B2C72761A00228D9F /* EspressoTimelineProvideBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EspressoTimelineProvideBundle.swift; sourceTree = "<group>"; };
+		DE06AB9D2C72761A00228D9F /* EspressoTimelineProvideControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EspressoTimelineProvideControl.swift; sourceTree = "<group>"; };
+		DE06AB9F2C72761A00228D9F /* EspressoTimelineProvide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EspressoTimelineProvide.swift; sourceTree = "<group>"; };
+		DE06ABA12C72761A00228D9F /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		DE06ABA32C72761D00228D9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE06ABA52C72761D00228D9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		DE06AB8B2C72739B00228D9F /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"App Intents/AppEntity + Custom Dialog/CustomAppEntity+Query.swift",
+				"App Intents/AppEntity + Custom Dialog/CustomDialogIntent.swift",
+				"App Intents/AppEntity + Custom Dialog/CustomDialogView.swift",
+				"App Intents/GetCaffeineIntent.swift",
+				"App Intents/LogEspressoIntent.swift",
+				"Siri + Shortcuts/AppShortcutsProvider.swift",
+			);
+			target = 33440C9E2B604A4200D0FF9C /* Caffeine Pal */;
+		};
+		DE06ABAE2C72763400228D9F /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"App Intents/LogEspressoIntent.swift",
+			);
+			target = DE06AB912C72761A00228D9F /* EspressoTimelineProvideExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		DE06AB7A2C72739A00228D9F /* Shortcuts */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (DE06AB8B2C72739B00228D9F /* PBXFileSystemSynchronizedBuildFileExceptionSet */, DE06ABAE2C72763400228D9F /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Shortcuts; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		33440C9C2B604A4200D0FF9C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE06AB8F2C72761A00228D9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE06AB972C72761A00228D9F /* SwiftUI.framework in Frameworks */,
+				DE06AB952C72761A00228D9F /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +138,8 @@
 				33344BE62B6849E900FCEF58 /* CaffinePalProducts.storekit */,
 				33440CB12B604B3E00D0FF9C /* Configuration */,
 				33440CA12B604A4200D0FF9C /* Caffeine Pal */,
+				DE06AB982C72761A00228D9F /* EspressoTimelineProvide */,
+				DE06AB932C72761A00228D9F /* Frameworks */,
 				33440CA02B604A4200D0FF9C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				33440C9F2B604A4200D0FF9C /* Caffeine Pal.app */,
+				DE06AB922C72761A00228D9F /* EspressoTimelineProvideExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,7 +160,7 @@
 				33440CBD2B6056BA00D0FF9C /* StoreKit 2 Code */,
 				33440CBC2B6056B500D0FF9C /* Store and Model */,
 				33440CB32B6054F100D0FF9C /* Views */,
-				DE29C12A2C6DEEB500CD2EE7 /* App Intents */,
+				DE06AB7A2C72739A00228D9F /* Shortcuts */,
 				33440CA22B604A4200D0FF9C /* Caffeine_PalApp.swift */,
 				33440CA42B604A4200D0FF9C /* ContentView.swift */,
 				33440CA62B604A4600D0FF9C /* Assets.xcassets */,
@@ -141,15 +215,27 @@
 			path = "StoreKit 2 Code";
 			sourceTree = "<group>";
 		};
-		DE29C12A2C6DEEB500CD2EE7 /* App Intents */ = {
+		DE06AB932C72761A00228D9F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DE29C12D2C6DEF3700CD2EE7 /* GetCaffeineIntent.swift */,
-				DE29C1322C6DFE1F00CD2EE7 /* LogEspressoIntent.swift */,
-				DE29C1342C6E867400CD2EE7 /* CustomDialogIntent.swift */,
-				DE29C1302C6DFA1500CD2EE7 /* AppShortcutsProvider.swift */,
+				DE06AB942C72761A00228D9F /* WidgetKit.framework */,
+				DE06AB962C72761A00228D9F /* SwiftUI.framework */,
 			);
-			path = "App Intents";
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE06AB982C72761A00228D9F /* EspressoTimelineProvide */ = {
+			isa = PBXGroup;
+			children = (
+				DE06AB992C72761A00228D9F /* EspressoTimelineProvideLiveActivity.swift */,
+				DE06AB9B2C72761A00228D9F /* EspressoTimelineProvideBundle.swift */,
+				DE06AB9D2C72761A00228D9F /* EspressoTimelineProvideControl.swift */,
+				DE06AB9F2C72761A00228D9F /* EspressoTimelineProvide.swift */,
+				DE06ABA12C72761A00228D9F /* AppIntent.swift */,
+				DE06ABA32C72761D00228D9F /* Assets.xcassets */,
+				DE06ABA52C72761D00228D9F /* Info.plist */,
+			);
+			path = EspressoTimelineProvide;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,15 +248,34 @@
 				33440C9B2B604A4200D0FF9C /* Sources */,
 				33440C9C2B604A4200D0FF9C /* Frameworks */,
 				33440C9D2B604A4200D0FF9C /* Resources */,
+				DE06ABAC2C72761D00228D9F /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DE06ABA72C72761D00228D9F /* PBXTargetDependency */,
 			);
 			name = "Caffeine Pal";
 			productName = "Caffeine Pal";
 			productReference = 33440C9F2B604A4200D0FF9C /* Caffeine Pal.app */;
 			productType = "com.apple.product-type.application";
+		};
+		DE06AB912C72761A00228D9F /* EspressoTimelineProvideExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE06ABA92C72761D00228D9F /* Build configuration list for PBXNativeTarget "EspressoTimelineProvideExtension" */;
+			buildPhases = (
+				DE06AB8E2C72761A00228D9F /* Sources */,
+				DE06AB8F2C72761A00228D9F /* Frameworks */,
+				DE06AB902C72761A00228D9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EspressoTimelineProvideExtension;
+			productName = EspressoTimelineProvideExtension;
+			productReference = DE06AB922C72761A00228D9F /* EspressoTimelineProvideExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -179,11 +284,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastSwiftUpdateCheck = 1520;
+				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					33440C9E2B604A4200D0FF9C = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					DE06AB912C72761A00228D9F = {
+						CreatedOnToolsVersion = 16.0;
 					};
 				};
 			};
@@ -201,6 +309,7 @@
 			projectRoot = "";
 			targets = (
 				33440C9E2B604A4200D0FF9C /* Caffeine Pal */,
+				DE06AB912C72761A00228D9F /* EspressoTimelineProvideExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -216,6 +325,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DE06AB902C72761A00228D9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE06ABA42C72761D00228D9F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -224,14 +341,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				33440CB52B60550100D0FF9C /* TabIconView.swift in Sources */,
-				DE29C12F2C6DF70600CD2EE7 /* GetCaffeineIntent.swift in Sources */,
 				33440CBB2B6055F500D0FF9C /* AppSettingsView.swift in Sources */,
 				33440CA52B604A4200D0FF9C /* ContentView.swift in Sources */,
-				DE29C1352C6E868300CD2EE7 /* CustomDialogIntent.swift in Sources */,
-				DE29C1332C6DFE2200CD2EE7 /* LogEspressoIntent.swift in Sources */,
 				33440CBF2B60577B00D0FF9C /* CaffeineStore.swift in Sources */,
 				33440CB92B6055ED00D0FF9C /* RecipesView.swift in Sources */,
-				DE29C1312C6DFA1900CD2EE7 /* AppShortcutsProvider.swift in Sources */,
 				33B40E8D2B62EE87004DC075 /* PaywallView.swift in Sources */,
 				33440CB72B6055E700D0FF9C /* IntakeView.swift in Sources */,
 				33440CC12B6069E500D0FF9C /* EspressoDrink.swift in Sources */,
@@ -241,7 +354,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DE06AB8E2C72761A00228D9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE06ABA02C72761A00228D9F /* EspressoTimelineProvide.swift in Sources */,
+				DE06AB9C2C72761A00228D9F /* EspressoTimelineProvideBundle.swift in Sources */,
+				DE06ABA22C72761A00228D9F /* AppIntent.swift in Sources */,
+				DE06ABB02C72769700228D9F /* CaffeineStore.swift in Sources */,
+				DE06AB9E2C72761A00228D9F /* EspressoTimelineProvideControl.swift in Sources */,
+				DE06AB9A2C72761A00228D9F /* EspressoTimelineProvideLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE06ABA72C72761D00228D9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE06AB912C72761A00228D9F /* EspressoTimelineProvideExtension */;
+			targetProxy = DE06ABA62C72761D00228D9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		33440CAB2B604A4600D0FF9C /* Debug */ = {
@@ -435,6 +569,64 @@
 			};
 			name = Release;
 		};
+		DE06ABAA2C72761D00228D9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F964A8L528;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EspressoTimelineProvide/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EspressoTimelineProvide;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.superwall.caffeinePal.Caffeine-Pal.navin.EspressoTimelineProvide";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE06ABAB2C72761D00228D9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F964A8L528;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EspressoTimelineProvide/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EspressoTimelineProvide;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.superwall.caffeinePal.Caffeine-Pal.navin.EspressoTimelineProvide";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -452,6 +644,15 @@
 			buildConfigurations = (
 				33440CAE2B604A4600D0FF9C /* Debug */,
 				33440CAF2B604A4600D0FF9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE06ABA92C72761D00228D9F /* Build configuration list for PBXNativeTarget "EspressoTimelineProvideExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE06ABAA2C72761D00228D9F /* Debug */,
+				DE06ABAB2C72761D00228D9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
