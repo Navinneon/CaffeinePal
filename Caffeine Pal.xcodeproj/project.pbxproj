@@ -106,10 +106,18 @@
 			);
 			target = DE06AB912C72761A00228D9F /* EspressoTimelineProvideExtension */;
 		};
+		DE87A8DD2C7332D700C376B9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CaffeinePalWidgetsControl.swift,
+			);
+			target = 33440C9E2B604A4200D0FF9C /* Caffeine Pal */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		DE06AB7A2C72739A00228D9F /* Shortcuts */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (DE06AB8B2C72739B00228D9F /* PBXFileSystemSynchronizedBuildFileExceptionSet */, DE06ABAE2C72763400228D9F /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Shortcuts; sourceTree = "<group>"; };
+		DE87A8DA2C7332B000C376B9 /* ControlWidget */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (DE87A8DD2C7332D700C376B9 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = ControlWidget; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +169,7 @@
 				33440CBC2B6056B500D0FF9C /* Store and Model */,
 				33440CB32B6054F100D0FF9C /* Views */,
 				DE06AB7A2C72739A00228D9F /* Shortcuts */,
+				DE87A8DA2C7332B000C376B9 /* ControlWidget */,
 				33440CA22B604A4200D0FF9C /* Caffeine_PalApp.swift */,
 				33440CA42B604A4200D0FF9C /* ContentView.swift */,
 				33440CA62B604A4600D0FF9C /* Assets.xcassets */,
